@@ -22,7 +22,7 @@ namespace ManejoDeErrores
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("¡Ocurrio un error!" + ex.Message + "ES: El índice esta fuera de los límites de la matriz.");
             }
         }
     }

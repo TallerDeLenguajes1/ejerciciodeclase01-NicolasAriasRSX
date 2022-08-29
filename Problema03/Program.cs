@@ -7,11 +7,21 @@ namespace Problema03
     {
         static void Main(string[] args)
         {
-            Auto Auto1 = CrearAutoFiat(2020);            
-            MostrarAuto(Auto1);            
 
-            Auto Auto2 = CrearAutoPeugeot();
-            MostrarAuto(Auto2);
+            try
+            {
+                Auto Auto1 = CrearAutoFiat(2020);            
+                MostrarAuto(Auto1);            
+
+                Auto Auto2 = CrearAutoPeugeot();
+                MostrarAuto(Auto2);
+                
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
         }
 
         static Auto CrearAutoFiat(int? anio = null)
